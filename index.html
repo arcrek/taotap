@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Nguyen Dang Dat</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="preload" href="./images/canhdep.jpg" as="image" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
+    <script>
+      window.addEventListener("DOMContentLoaded", () => {
+        VANTA.GLOBE({
+          el: "#vanta",
+          mouseControls: true,
+          touchControls: true,
+          gyroControls: false,
+          minHeight: 200.0,
+          minWidth: 200.0,
+          scale: 1.0,
+          scaleMobile: 1.0,
+          backgroundAlpha: 0.0,
+          color2: 0xff00f0,
+          wingSpan: 40.0,
+          separation: 100.0,
+          alignment: 77.0,
+          cohesion: 5.0,
+          quantity: 1.0
+        });
+
+        setTimeout(() => {
+          const main = document.querySelector("main");
+          main.style.opacity = 1;
+          main.style.filter = "blur(0px)";
+        }, 1000);
+      });
+    </script>
+  </head>
+  <body>
+    <div id="vanta"></div>
+    <main class="animated">
+      <header>
+        <img src="./images/dangdat.jpg" />
+        <h1>@nguyendangdat</h1>
+      </header>
+      <ul>
+        <li>
+          <a href="tel:0868512860">
+            <img src="./images/call.svg" alt="phone" width="20" />
+            0868512860
+          </a>
+        </li>
+        <li>
+          <a href="mailto:nguyendangdat412@gmail.com">
+            <img src="./images/mail.svg" alt="email" width="20" />
+            nguyendangdat412@gmail.com
+          </a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/nguyendangdat.spt/">
+            <img src="./images/logo-facebook.svg" alt="Facebook" width="20" />
+            Facebook
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/aurorakid">
+            <img src="./images/logo-github.svg" alt="Twitter" width="20" />
+            Twitter
+          </a>
+        </li>
+        <li>
+          <a href="https://discord.com/users/425672287375720449">
+            <img src="./images/logo-discord.svg" alt="Discord" width="20" />
+            GitHub
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/_aurorakid/">
+            <img src="./images/logo-instagram.svg" alt="Instagram" width="20" />
+            Instagram
+          </a>
+        </li>
+      </ul>
+    </main>
+  </body>
+</html>
